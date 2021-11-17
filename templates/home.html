@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home page</title>
+</head>
+<body>
+<table border="2">
+    <tr>
+        <td>RN</td>
+        <td>Fname</td>
+        <td>Lname</td>
+        <td>DOB</td>
+
+        <td>Email</td>
+        <td>Addr</td>
+
+    </tr>
+    {% for data in obj %}
+    <tr>
+        <td>{{data.rn}}</td>
+        <td>{{data.fname}}</td>
+        <td>{{data.lname}}</td>
+        <td>{{data.dob}}</td>
+        <td>{{data.email}}</td>
+        <td>{{data.addr}}</td>
+
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
